@@ -1,0 +1,377 @@
+@import "vars"
+@import "fonts"
+
+
+
+//------------------------------------ method page ------------------------------------//
+#section-method-title
+	background-color: black
+	width: 100%
+	height: 100vh
+	min-height: 1000px
+	.content
+		display: block
+		h1,p
+			color: white
+			text-align: center
+		h1
+			// opacity: 0
+			animation-delay: 0.6s
+			margin-top: 13rem
+	p
+		// opacity: 0
+		width: 40%
+		margin: 1rem auto
+		animation-delay: 1s
+	img
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: auto
+
+
+#section-theory1
+	width: 100%
+	background: url('../img/wave.png') center no-repeat
+	background-size: cover
+	.content
+		justify-content: space-between
+		align-items: center
+		padding-top:	8rem
+		padding-bottom: 8rem 
+	h2,p
+		margin-top: 0
+		margin-bottom: 3rem
+	.left-column
+		width: 30%
+	// p,a
+	// 	opacity: 0
+	.img-wrap
+		position: relative
+		&:before
+			content: url('../img/ionosphere.png')
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			transform: translate(-16.5%,-16.5%)
+	.right-column
+		width: 50%
+
+	// transform: translate(50%,50%)
+
+
+#section-theory2
+	width: 100%
+	height: 100vh
+	min-height: 1000px
+	background: url('../img/theory2.jpg') bottom right no-repeat
+	background-size: cover
+	color: white
+	position: relative
+	.info-wrap
+		width: 40%
+		position: relative
+	p
+		margin: 2rem 0
+	img:nth-of-type(2)
+		animation-delay: 0.5s
+	img:nth-of-type(3)
+		animation-delay: 1s
+	img:nth-of-type(4)
+		animation-delay: 1.5s
+	img
+		position: absolute
+		bottom: 0
+		right: 0
+		opacity: 0
+		z-index: 1
+	a
+		position: absolute
+		z-index: 2
+.fadeIn-ellips
+	animation: animateEllips 3s
+	animation-iteration-count: 1
+	animation-timing-function: ease-in-out
+	animation-fill-mode: forwards
+
+#section-theory3
+	width: 100%
+	background: url('../img/wave.png')
+	background-size: cover
+	.content
+		justify-content: space-between
+		flex-wrap: wrap
+	.left-column,.right-column
+		width: 45%
+		padding: 1rem
+		box-sizing: border-box
+	.left-column
+		h2
+			text-align: right
+	.graph-wrap
+		position: relative
+		width: 100%
+		height: 400px
+	h2,p
+		color: black
+		margin-top: 0
+	a
+		margin: 2rem auto
+	.left-signatures
+		position: absolute
+		left: 0
+		bottom: 40%
+		transform: translateY(50%)
+		padding: 2.5rem
+		text-align: right
+		display: none
+		h3:after
+			content: url(../img/ico/line.png)
+			display: inline-block
+			padding-left: 1rem
+			transform: translateY(-15%)
+	.center-signatures
+		position: absolute
+		left: 57%
+		bottom: 40%
+		transform: translateY(50%) translateX(-50%)
+		display: none
+		h3:after
+			content: url(../img/ico/line.png)
+			display: inline-block
+			padding-left: 1rem
+			transform: translateY(-15%)
+	.right-signatures
+		position: absolute
+		right: 0
+		bottom: 40%
+		transform: translateY(50%)
+		padding: 0.5rem
+		display: none
+		h3:before
+			content: url(../img/ico/line.png)
+			display: inline-block
+			padding-right: 1rem
+			transform: translateY(-15%)
+	.vertical-line-wrap
+		position: absolute
+		left: 50%
+		bottom: 10%
+		height: 500px
+		width: 3px
+	.vertical-line
+		position: relative
+		width: 100%
+		height: 0
+		background-color: #56d44e
+		opacity: 0
+		transition: height .8s, opacity .8s
+		h4
+			color: black
+			position: absolute
+			top: 41%
+			left: 10px
+			width: 50px
+			display: none
+		img
+			position: absolute
+			bottom: 0
+			left: 0
+			transform: translateX(-150%)
+			opacity: 0
+			transition: transform .8s, opacity .8s
+			transition-delay: 1s
+	.clock-line-wrap
+		position: absolute
+		right: 15%
+		bottom: 10%
+		height: 250px
+		width: 3px
+	.clock-line
+		position: relative
+		width: 100%
+		height: 0
+		background-color: #b8b8b8
+		opacity: 0
+		transition: height .8s, opacity .8s
+		transition-delay: .5s
+		h4
+			color: #5d5d5d
+			position: absolute
+			left: 0
+			transform: translateX(-50%)
+			top: -30px
+			margin: 0
+			display: none
+		img
+			position: absolute
+			left: 0
+			top: -110px
+			transform: translateX(-50%)
+			display: none
+	h3
+		color: #545454
+		margin: 3rem
+		font-size: 25px
+	.vertical-line-animate,.clock-line-animate
+		height: 100%
+		opacity: 1
+	.arrow-animate
+		transform: translateX(-100%) !important
+		opacity: 1 !important
+	.btn
+		opacity: 0
+
+#graph
+	height: 100%
+	width: 100%
+	position: absolute
+	left: 55%
+	top: 50%
+	transform: translateX(-50%) translateY(-50%)
+	
+
+#section-photogallery
+	position: relative
+	height: 100vh
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	.photo-wrap
+		width: 50%
+		height: 50%
+		box-sizing: border-box
+		overflow: hidden
+	.photo
+		width: 100%
+		height: 100%
+	.photo-wrap:nth-child(1)
+		.photo
+			background: url(../img/photogallery1.jpg) center no-repeat
+			background-size: cover
+			background-color: #535659ab
+			background-blend-mode: multiply
+	.photo-wrap:nth-child(2)
+		.photo
+			background: url(../img/photogallery2.jpg) center no-repeat
+			background-size: cover
+			background-color: #535659ab
+			background-blend-mode: multiply
+	.photo-wrap:nth-child(3)
+		.photo
+			background: url(../img/photogallery3.jpg) center no-repeat
+			background-size: cover
+			background-color: #535659ab
+			background-blend-mode: multiply
+	.photo-wrap:nth-child(4)
+		.photo
+			background: url(../img/photogallery4.jpg) center no-repeat
+			background-size: cover
+			background-color: #535659ab
+			background-blend-mode: multiply
+	.info-wrap
+		width: 100%
+		max-width: 1280px
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		// padding: 2rem 1rem
+		box-sizing: border-box
+		height: 100vh
+		display: flex
+		flex-wrap: wrap
+		color: white
+	.text-wrap
+		position: relative
+		width: 50%
+		height: 50%
+		box-sizing: border-box
+		padding: 2rem	1rem
+		display: flex
+		align-items: center
+	.text
+		width: 60%
+	.text-wrap:nth-child(1)
+		.text
+			width: 40%
+	.text-wrap:nth-child(3)
+		.text
+			width: 70%
+	.text-wrap:nth-child(4)
+		.text
+			width: 52%
+	.text-wrap:nth-child(even)
+		justify-content: flex-end
+
+
+#section-opportunities
+	background: url(../img/method-alex-grey-background.png) center no-repeat
+	background-size: cover
+	color: white
+	height: 100vh
+	.content
+		padding-top: 0
+		padding-bottom: 0
+	.logo-wrap
+		display: flex
+		align-items: center
+	h2
+		width: 50%
+		margin-left: 1rem
+		line-height: 0.9
+	p
+		width: 100%
+		margin: 3rem 0
+	.right-column
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		margin-left: 3rem
+	a
+		background-color: white
+		background-image: unset
+		color: black
+		font-weight: bold
+	.left-column
+		position: relative
+		height: 100%
+		width: 50%
+		img
+			position: absolute
+			bottom: 0
+			left: -15px
+			height: 100vh
+
+
+#section-method-offer
+	height: 1000px
+	width: 100%
+	background: url(../img/method-offer.jpg) bottom center no-repeat
+	background-color: #13181fa1
+	background-blend-mode: multiply
+	background-size: cover
+	display: flex
+	justify-content: center
+	align-items: center
+	color: white
+	text-align: center
+	.info-wrap
+		margin-top: -15rem
+	h2
+		margin: 0
+	a
+		margin: 0 auto
+	.btn-content
+		display: flex
+		align-items: center
+		&:before
+			content: url('../img/ico/basket.png')
+			display: inline-block
+			padding-right: 1rem
+	p
+		margin: 2rem 0
+
+
+//------------------------------------ end method page ------------------------------------//	

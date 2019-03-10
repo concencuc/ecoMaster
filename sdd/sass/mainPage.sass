@@ -1,0 +1,577 @@
+@import "vars"
+@import "fonts"
+	
+	
+//------------------------------------ main page ------------------------------------//
+#section-title
+	position: relative
+	height: 100vh
+	width: 100%
+	background: url('../img/title.jpg') bottom no-repeat
+	background-size: cover
+	h1
+		animation-delay: 0.4s
+		opacity: 0
+	p
+		animation-delay: 0.8s
+		opacity: 0
+		width: 45%
+		margin-bottom: 2.5rem
+	a
+		animation-delay: 1.2s
+		opacity: 0
+	.wrap-center
+		height: 100%
+	.content
+		color: white
+		height: 100%
+		display: flex
+		align-items: center
+	.title-text
+		transform: translateY(-20%)
+	.mouse-scroll
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+	.scroll-line-wrap
+		overflow-y: hidden
+		position: relative
+		margin-top: 1rem
+	.scroll-line
+		height: 150px
+		width: 2px
+		background-color: white
+		margin: 0 auto
+		animation: moveScrollLine 2s infinite
+
+
+#section-about-technology
+	position: relative
+	height: 100vh
+	min-height: 800px
+	width: 100%
+	background: url('../img/aboutCube.jpg') top center no-repeat
+	background-size: cover
+	overflow: hidden
+	.tree-wrap
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: flex-end
+	h2
+		color: white
+		width: 100%
+		text-align: right
+		letter-spacing: 2px
+		margin: 8px 0
+	.circle
+		position: absolute
+		width: 250px
+		box-sizing: border-box
+		color: white
+		opacity: 1
+		transition: opacity .5s
+		font-size: 15px
+	.circle1
+		display: flex
+		justify-content: flex-end
+		width: 380px
+		flex-wrap: wrap
+		position: absolute
+		transform: translateX(-105%) translateY(15%)
+		box-sizing: border-box
+		visibility: hidden
+	.circle2,.circle3,.circle9,.circle10
+		transform: translateX(-105%) translateY(-10%)
+		text-align: right
+	.circle4,.circle5,.circle6,.circle7
+		transform: translateX(15%) translateY(-10%)
+	.circle2
+		transform: translateX(-105%) translateY(0%)
+	.circle3
+		transform: translateX(-105%) translateY(20%)
+	.circle4
+		transform: translateX(20%) translateY(20%)
+	.circle5
+		transform: translateX(20%) translateY(25%)
+	.circle6
+		transform: translateX(20%) translateY(20%)
+	.circle7
+		transform: translateX(20%) translateY(20%)
+	.circle9
+		transform: translateX(-105%) translateY(15%)
+	.circle10
+		transform: translateX(-105%) translateY(15%)
+	.circle-hidden
+		opacity: 0 !important
+		visibility: hidden
+#tree
+	width: 70vw
+	height: 90vh
+	min-height: 700px
+	opacity: 0
+	transition: opacity 1s
+	position: relative
+	bottom: -3px
+
+
+#section-ecosleepCube
+	background: url('../img/mainEcosleepCube.jpg') center no-repeat
+	background-size: cover
+	height: 100vh
+	width: 100%
+	position: relative
+	min-height: 900px
+	.wrap-center
+		height: 100%
+	.content
+		height: 100%
+	h2
+		color: $btn-color
+		width: 75%
+		text-align: left
+	.text-wrap
+		width: 50%
+		margin-top: 4rem
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 2
+		padding-left: 1rem
+	.text-content
+		margin-top: 2.5rem
+		display: flex
+		p
+			margin: 0.5rem 0 0 0
+	.text-content:nth-child(1)
+		animation-delay: 0.8s
+	.text-content:nth-child(2)
+		animation-delay: 1.2s
+	.text-content:nth-child(3)
+		animation-delay: 1.4s
+	a
+		animation-delay: 1.6s
+	.left-column
+		width: 90px
+		position: relative
+		img
+			margin: 0 auto
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+	.right-column
+		width: 85%
+		margin-left: 0.8rem
+	.btn
+		margin-top: 3rem
+	.img-with-cube
+		// height: 90vh
+		// min-height: 800px
+		position: absolute
+		bottom: 0
+		right: -310px
+		z-index: 1
+		// padding-right: 1rem
+	.root-wrap
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 0
+#root
+	display: none
+	width: 70vw
+	height: 70vh
+
+
+#section-benefits
+	background: url('../img/benefits.jpg') top no-repeat
+	background-size: cover
+	width: 100%
+	height: 100vh
+	min-height: 800px
+	position: relative
+	.benefits-info
+		margin-top: 2rem
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 1rem
+		& >img
+			position: relative
+			height: 50vh
+			width: auto
+			max-height: 370px
+	h2
+		margin-bottom: 0.5rem
+	.nav-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		opacity: 0
+	.nav
+		margin-left: 2rem
+		img
+			cursor: pointer
+	.nav-left
+		margin-right: 1.5rem
+	.cubeBenefits
+		margin-top: 3rem
+
+	.orbit
+		position: absolute
+		// transform: translateX(-50%) translateY(-50%)
+		z-index: 0
+		border: 1px solid	#3a3837
+		border-radius: 50%
+		opacity: 0
+		transition: opacity .5s
+	.orbit1
+		height: 100vh
+		width: 100vh
+		max-height: 900px
+		max-width: 900px
+		min-height: 750px
+		min-width: 750px
+		transform: translateX(-50%) translateY(-50%) rotate(-35deg)
+	.orbit2
+		height: 120vh
+		width: 120vh
+		max-height: 1100px
+		max-width: 1100px
+		min-width: 950px
+		min-height: 950px
+		transform: translateX(-50%) translateY(-50%) rotate(20deg)
+	.orbit3
+		height: 140vh
+		width: 140vh
+		max-height: 1300px
+		max-width: 1300px
+		min-width: 1150px
+		min-height: 1150px
+		transform: translateX(-50%) translateY(-50%) rotate(-5deg)
+	.orbit-container
+		position: relative
+		width: 100%
+		height: 100%
+	.planet-orbit
+		position: absolute
+		top: 50%
+		right: -60px
+		width: 120px
+		height: 120px
+		display: flex
+		justify-content: center
+		align-items: center
+		box-sizing: border-box
+	.planet-orbit1
+		transform: rotate(35deg)
+	.planet-orbit2
+		transform: rotate(-20deg)
+	.planet-orbit3
+		transform: rotate(5deg)
+	.animate-planet-orbit
+		width: 120px
+		height: 120px
+		position: absolute
+		top: 0
+		left: 0
+		border: 1px solid #67851b
+		border-radius: 50%
+		box-sizing: border-box
+		transition: transform 1s
+		background-image: radial-gradient(circle,#28422a,#0f350f1c)
+		z-index: -1
+	.planet
+		width: 70px
+		height: 70px
+		background-color: #8ecd0f
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		color: white
+		margin: 0
+		padding: 0
+		p
+			margin: 0
+			padding: 0
+			font-size: 30px
+			transform: translateY(5%)
+	.planet-text-wrap
+		opacity: 0
+		transition: opacity .5s
+		position: absolute
+		color: white
+		width: 300px
+	.planet-text2
+		display: none
+	.animateorbit1
+		animation: moveOrbit1 2s
+		animation-iteration-count: 1
+		animation-timing-function: ease-in-out
+		animation-fill-mode: backward
+	.animateorbit2
+		animation: moveOrbit2 2s
+		animation-iteration-count: 1
+		animation-timing-function: ease-in-out
+		animation-fill-mode: backward
+	.animateorbit3
+		animation: moveOrbit3 2s
+		animation-iteration-count: 1
+		animation-timing-function: ease-in-out
+		animation-fill-mode: backward
+
+
+#section-science
+	background: url('../img/wave2.jpg') center no-repeat
+	background-size: cover
+	width: 100%
+	position: relative
+	h2
+		margin-top: 0
+	.content
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+	.science-info-wrap
+		width: 40%
+	.btn
+		margin-top: 2.5rem
+	p
+		opacity: 0
+		animation-delay: 0.4s
+	a
+		opacity: 0
+		animation-delay: 0.8s
+
+
+#section-aboutUs
+	background: url('../img/aboutUs.jpg') center no-repeat
+	background-size: cover
+	width: 100%
+	height: 80vh
+	position: relative
+	.content
+		justify-content: center
+		align-items: center
+	.aboutUs-info-wrap
+		width: 50%
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		text-align: center
+	h2
+		text-align: center
+	p
+		color: white
+		opacity: 0
+		animation-delay: 0.4s
+	a
+		opacity: 0
+		animation-delay: 0.8s
+	.btn
+		margin-top: 3rem
+
+
+#section-press
+	width: 100%
+	position: relative
+	background-color: #f6f6f6
+	.wrap-center
+		height: 100%
+		flex-wrap: wrap
+		padding: 3rem 0
+	h2
+		width: 100%
+		color: black
+		text-align: center
+	p
+		font-size: 20px
+	.press-info-wrap
+		width: 100%
+	.press-owl-carousel
+		position: relative
+		width: 100%
+		display: flex
+		justify-content: space-between
+	.press
+		opacity: 0
+		width: 58%
+		margin: 2rem 3rem
+		margin: 0 auto
+	// .press:nth-child(1)
+	// 	animation-delay: 2.4s
+	// .press:nth-child(2)
+	// 	animation-delay: 1.6s
+	// .press:nth-child(3)
+	// 	animation-delay: 0.8s	
+	.press-img, .press-text
+		height: 50%
+	.press-img
+		display: flex
+		justify-content: center
+		align-items: center
+		min-height: 300px
+		img
+			width: auto
+			height: auto
+	.nav-wrap
+		display: flex
+		align-items: center
+		margin-top: 3rem
+		margin-bottom: 2.5rem
+	.pressNavLeft,.pressNavRight
+		cursor: pointer
+	.pressMore
+		color: black
+		border: 1px solid	black
+		border-radius: 40px
+		padding: 0.8rem 1.5rem 
+		margin: 0 6rem
+		font-family: $btn-font
+
+
+#section-offer
+	width: 100%
+	position: relative
+	// height: 100vh
+	// min-height: 900px
+	height: 950px
+	background: url('../img/offer.jpg') bottom no-repeat
+	background-size: cover
+	.offer-info-wrap
+		position: absolute
+		left: 20%
+		bottom: 200px
+		width: 450px
+	.content
+		justify-content: center
+		flex-wrap: wrap
+		color: white
+		padding-bottom: 0
+	h3
+		font-weight: normal
+		opacity: 0
+		animation-delay: 0.4s
+	.btn
+		opacity: 0
+		margin: 3rem 0
+		animation-delay: 0.8s
+	a
+		display: flex
+		align-items: center
+		color: white
+		&:before
+			content: url(../img/ico/basket.png)
+			position: relative
+			display: inline-block
+			padding-right: 1rem
+	.img-wrap
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: flex-end
+
+
+#section-blog
+	width: 100%
+	position: relative
+	background-color: #f6f6f6
+	.content
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	h2
+		color: black
+		text-align: center
+	.blog-carousel-wrap
+		display: flex
+		justify-content: space-around
+		width: 100%
+	.item-blog
+		opacity: 0
+		border-radius: 40px
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)
+		position: relative
+		margin: 1rem
+		// display: flex
+		// flex-wrap: wrap
+		min-height: 420px
+		
+	.item-title-wrap
+		padding: 1.5rem
+		// width: 100%
+	.item-img-wrap
+		height: 250px
+		// width: 100%
+		img
+			object-fit: cover
+			border-radius: 40px 40px 0 0
+			width: 100%
+			height: 100%
+	h4,p
+		text-align: center
+		margin-top: 0
+	p
+		word-break: break-word
+	.nav-wrap
+		display: flex
+		align-items: center
+		margin: 5rem 0
+	.blogNavLeft,.blogNavRight
+		cursor: pointer
+	.btn
+		margin: 0 6rem
+		
+
+#section-sabscription
+	background-color: $btn-color
+	background-image: linear-gradient(to left, #a4d905, #68b823)
+	.content
+		justify-content: center
+		align-items: center
+		flex-wrap: wrap
+	.subscrip-form
+		width: 100%
+		display: flex
+		// justify-content: center
+		align-items: center
+		transform: translateX(10%)
+	label
+		width: 220px
+		text-align: right
+		color: white
+	input[type='text']
+		margin: 0 2rem
+		width: 40%
+		padding: 0.8rem 1.5rem 
+	input[type='submit']
+		background-color: #373c43
+		background-image: linear-gradient(to right, #373c43, #45544c)
+		color: white
+		cursor: pointer
+		font-family: $btn-font
+		padding: 0.8rem 1.5rem
+	h2
+		width: 100%
+		text-align: center
+		margin-top: 0
+	.confidence
+		width: 100%
+		color: white
+		margin-top: 3rem
+		text-align: center
+		font-size: 14px
+		a
+			color: white
+			text-decoration: underline
+			display: inline-block
+	
+//------------------------------------ end main page ------------------------------------//
+
+#rss-mess
+	position: absolute	
+	bottom: 27%
+	color: white

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "adobe";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Adobe/AdobeClean-Light.eot");
+  src: url("../fonts/Adobe/AdobeClean-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Adobe/AdobeClean-Light.woff") format("woff"), url("../fonts/Adobe/AdobeClean-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "adobe";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Adobe/AdobeClean-Regular.eot");
+  src: url("../fonts/Adobe/AdobeClean-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Adobe/AdobeClean-Regular.woff") format("woff"), url("../fonts/Adobe/AdobeClean-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "adobe";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Adobe/AdobeClean-Bold.eot");
+  src: url("../fonts/Adobe/AdobeClean-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Adobe/AdobeClean-Bold.woff") format("woff"), url("../fonts/Adobe/AdobeClean-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "comfort";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.eot");
+  src: url("../fonts/Comfortaa/Comfortaa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Comfortaa/Comfortaa-Regular.woff") format("woff"), url("../fonts/Comfortaa/Comfortaa-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "montser";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype"); }
+#section-device-title {
+  height: 100vh;
+  width: 100%;
+  background-color: #ccced6; }
+  #section-device-title .text-wrap {
+    width: 50%; }
+  #section-device-title .img-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: url("../img/method-alex-2.png") left bottom no-repeat;
+    background-size: auto 100%;
+    width: 50%; }
+
+/*# sourceMappingURL=devicePage.css.map */

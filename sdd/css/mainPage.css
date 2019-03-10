@@ -1,0 +1,75 @@
+/*
+Error: Invalid CSS after "...circle,#28422a,": expected ")", was "#0f350f1c)"
+        on line 284 of D:\1111new_papka\ecoMasterSleep\sdd\sass\mainPage.sass
+
+279: 		left: 0
+280: 		border: 1px solid #67851b
+281: 		border-radius: 50%
+282: 		box-sizing: border-box
+283: 		transition: transform 1s
+284: 		background-image: radial-gradient(circle,#28422a,#0f350f1c)
+285: 		z-index: -1
+286: 	.planet
+287: 		width: 70px
+288: 		height: 70px
+289: 		background-color: #8ecd0f
+
+Backtrace:
+D:\1111new_papka\ecoMasterSleep\sdd\sass\mainPage.sass:284
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:730:in `assert_tok'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:520:in `funcall'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:499:in `ident'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_not'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_div'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_minus'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_plus'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `times_div_or_mod'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `plus_or_minus'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `relational'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `eq_or_neq'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `and_expr'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `or_expr'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:473:in `space'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:414:in `interpolation'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:338:in `expr'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:721:in `assert_expr'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:749:in `parse_property'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/1111new_papka/coala/bin/sass:22:in `load'
+D:/1111new_papka/coala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...circle,#28422a,\": expected \")\", was \"#0f350f1c)\"\A         on line 284 of D:\1111new_papka\ecoMasterSleep\sdd\sass\mainPage.sass\A \A 279: 		left: 0\A 280: 		border: 1px solid #67851b\A 281: 		border-radius: 50%\A 282: 		box-sizing: border-box\A 283: 		transition: transform 1s\A 284: 		background-image: radial-gradient(circle,#28422a,#0f350f1c)\A 285: 		z-index: -1\A 286: 	.planet\A 287: 		width: 70px\A 288: 		height: 70px\A 289: 		background-color: #8ecd0f"; }

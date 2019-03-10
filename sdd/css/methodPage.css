@@ -1,0 +1,65 @@
+/*
+Error: Invalid CSS after "": expected expression (e.g. 1px, bold), was "#535659ab"
+        on line 254 of D:\1111new_papka\ecoMasterSleep\sdd\sass\methodPage.sass
+
+249: 		height: 100%
+250: 	.photo-wrap:nth-child(1)
+251: 		.photo
+252: 			background: url(../img/photogallery1.jpg) center no-repeat
+253: 			background-size: cover
+254: 			background-color: #535659ab
+255: 			background-blend-mode: multiply
+256: 	.photo-wrap:nth-child(2)
+257: 		.photo
+258: 			background: url(../img/photogallery2.jpg) center no-repeat
+259: 			background-size: cover
+
+Backtrace:
+D:\1111new_papka\ecoMasterSleep\sdd\sass\methodPage.sass:254
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:749:in `parse_property'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/1111new_papka/coala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/1111new_papka/coala/bin/sass:22:in `load'
+D:/1111new_papka/coala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \"#535659ab\"\A         on line 254 of D:\1111new_papka\ecoMasterSleep\sdd\sass\methodPage.sass\A \A 249: 		height: 100%\A 250: 	.photo-wrap:nth-child(1)\A 251: 		.photo\A 252: 			background: url(../img/photogallery1.jpg) center no-repeat\A 253: 			background-size: cover\A 254: 			background-color: #535659ab\A 255: 			background-blend-mode: multiply\A 256: 	.photo-wrap:nth-child(2)\A 257: 		.photo\A 258: 			background: url(../img/photogallery2.jpg) center no-repeat\A 259: 			background-size: cover"; }
